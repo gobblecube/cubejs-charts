@@ -63,6 +63,10 @@ config:
   ##
   apiPort: 4000
 
+  ## Init containers to run before starting the main container
+  ##
+  initContainers: []
+
   ## The port to listen to MySQL-compatible connections on
   ##
   sqlPort:
