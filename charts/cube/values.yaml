@@ -63,10 +63,6 @@ config:
   ##
   apiPort: 4000
 
-  ## Init containers to run before starting the main container
-  ##
-  initContainers: []
-
   ## The port to listen to MySQL-compatible connections on
   ##
   sqlPort:
@@ -578,6 +574,10 @@ api:
     annotations: {}
 
   apiCount: 1
+
+  ## Init containers to run before starting the main container
+  ##
+  initContainers: []
 
   ## Affinity for pod assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
