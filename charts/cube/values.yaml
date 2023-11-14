@@ -589,7 +589,7 @@ api:
   ## We can use an empty volume and volume mounts to copy data
   ## from a remote location like s3 to the local volume
   ##
-  initContainers:
+  initContainers: []
   # - name: aws-init-container
   #   image: amazon/aws-cli:latest
   #   command: ['sh', '-c', 'aws s3 cp s3://your-s3-bucket/your-data /path/to/volume/mount']
