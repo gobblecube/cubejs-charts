@@ -170,10 +170,10 @@ config:
   ## The config volumes
   ## Will be used to both api and worker
   volumes: []
+  ## In case you want to use configMap
   # - name: schema
   #   configMap:
   #     name: schema
-
   ## In case you want to use init container
   # - name: data-volume
   #   emptyDir: {}
@@ -181,10 +181,10 @@ config:
   ## The config volumeMounts
   ## Will be used to both api and worker
   volumeMounts: []
+  ## In case you want to use configMap
   # - name: schema
   #   readOnly: true
   #   mountPath: /cube/conf/schema
-
   ## In case you want to use init container
   # - name: data-volume
   #   readOnly: true
